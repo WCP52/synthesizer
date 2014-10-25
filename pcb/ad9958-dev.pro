@@ -1,4 +1,4 @@
-update=Fri 17 Oct 2014 02:49:00 PM EDT
+update=Sat 25 Oct 2014 10:04:08 AM EDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -29,7 +29,7 @@ ModuleOutlineThickness=0.150000000000
 version=1
 [eeschema]
 version=1
-LibDir=../../../electronics/kicad/library
+LibDir=../../../../../electronics/kicad/library
 [eeschema/libraries]
 LibName1=1N
 LibName2=1N-SMD
