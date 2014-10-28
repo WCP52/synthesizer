@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-10-18 BZR 5203)-product   date = Sat 25 Oct 2014 03:41:59 PM EDT
+Cmp-Mod V01 Created by Cvpcb (2014-10-18 BZR 5203)-product   date = Mon 27 Oct 2014 10:11:35 PM EDT
 
 BeginCmp
 TimeStamp = /5443154D;
@@ -106,13 +106,6 @@ IdModule  = IPC7351-Nominal:CAPC2012X70;
 EndCmp
 
 BeginCmp
-TimeStamp = /54433BE0;
-Reference = C18;
-ValeurCmp = 220n;
-IdModule  = IPC7351-Nominal:CAPC2012X70;
-EndCmp
-
-BeginCmp
 TimeStamp = /5443233A;
 Reference = C19;
 ValeurCmp = 220n;
@@ -157,13 +150,6 @@ EndCmp
 BeginCmp
 TimeStamp = /544325A2;
 Reference = C25;
-ValeurCmp = 220n;
-IdModule  = IPC7351-Nominal:CAPC2012X70;
-EndCmp
-
-BeginCmp
-TimeStamp = /544325AC;
-Reference = C26;
 ValeurCmp = 220n;
 IdModule  = IPC7351-Nominal:CAPC2012X70;
 EndCmp
@@ -253,6 +239,27 @@ IdModule  = IPC7351-Nominal:CAPC2012X70;
 EndCmp
 
 BeginCmp
+TimeStamp = /544F768B;
+Reference = D1;
+ValeurCmp = SS12;
+IdModule  = IPC7351-Nominal:DIOM5326X292;
+EndCmp
+
+BeginCmp
+TimeStamp = /544F7B99;
+Reference = D2;
+ValeurCmp = SS12;
+IdModule  = IPC7351-Nominal:DIOM5326X292;
+EndCmp
+
+BeginCmp
+TimeStamp = /544F7C2C;
+Reference = D3;
+ValeurCmp = SS12;
+IdModule  = IPC7351-Nominal:DIOM5326X292;
+EndCmp
+
+BeginCmp
 TimeStamp = /54445A1A;
 Reference = E1;
 ValeurCmp = 600;
@@ -278,13 +285,6 @@ TimeStamp = /544C67C8;
 Reference = E4;
 ValeurCmp = 600;
 IdModule  = IPC7351-Nominal:INDC1005X60;
-EndCmp
-
-BeginCmp
-TimeStamp = /5443B275;
-Reference = J1;
-ValeurCmp = 3V3;
-IdModule  = conn:CONN_2-SIL;
 EndCmp
 
 BeginCmp
@@ -544,6 +544,27 @@ TimeStamp = /544BD1AE;
 Reference = R33;
 ValeurCmp = 49r9;
 IdModule  = IPC7351-Nominal:RESC1005X40;
+EndCmp
+
+BeginCmp
+TimeStamp = /544F27A2;
+Reference = R34;
+ValeurCmp = 250mA;
+IdModule  = IPC7351-Nominal:RESC3216X60;
+EndCmp
+
+BeginCmp
+TimeStamp = /544F0948;
+Reference = R35;
+ValeurCmp = 100mA;
+IdModule  = IPC7351-Nominal:RESC3216X60;
+EndCmp
+
+BeginCmp
+TimeStamp = /544F1433;
+Reference = R36;
+ValeurCmp = 100mA;
+IdModule  = IPC7351-Nominal:RESC3216X60;
 EndCmp
 
 BeginCmp
