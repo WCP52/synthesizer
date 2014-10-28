@@ -1,24 +1,13 @@
-echo Rendering top/bottom composite...
-gerbv -x png -p gvp/render_2l.gvp -D600 -a
-optipng output.png -quiet
-mv output.png renders/render_2l.png
+function render {
+    echo "Rendering $1..."
+    gerbv -x png -p "gvp/$2.gvp" -D600 -a
+    optipng output.png -quiet
+    mv output.png "renders/$2.png"
+    convert "renders/$2.png" -scale '33%' "renders/$2_small.png"
+}
 
-echo Rendering layer 1...
-gerbv -x png -p gvp/render_lyr1.gvp -D600 -a
-optipng output.png -quiet
-mv output.png renders/render_lyr1.png
-
-echo Rendering layer 2...
-gerbv -x png -p gvp/render_lyr2.gvp -D600 -a
-optipng output.png -quiet
-mv output.png renders/render_lyr2.png
-
-echo Rendering layer 3...
-gerbv -x png -p gvp/render_lyr3.gvp -D600 -a
-optipng output.png -quiet
-mv output.png renders/render_lyr3.png
-
-echo Rendering layer 4...
-gerbv -x png -p gvp/render_lyr4.gvp -D600 -a
-optipng output.png -quiet
-mv output.png renders/render_lyr4.png
+render "top/bottom composite" render_2l
+render "layer 1" render_lyr1
+render "layer 2" render_lyr2
+render "layer 3" render_lyr3
+render "layer 4" render_lyr4
