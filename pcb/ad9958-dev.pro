@@ -1,4 +1,4 @@
-update=Sat 25 Oct 2014 10:04:08 AM EDT
+update=Wed 29 Oct 2014 08:41:34 AM EDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -75,3 +75,16 @@ LibName41=supertex
 LibName42=symbol
 LibName43=texas
 LibName44=vishay_semi
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=renders/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
