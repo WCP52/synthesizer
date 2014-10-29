@@ -1081,8 +1081,8 @@ F 4 "#SYM6" H 12600 1300 50  0001 C CNN "OldReference"
 	1    12600 1300
 	1    0    0    -1  
 $EndComp
-Text Notes 8100 1650 0    60   ~ 0
-tline, Z0=50, Zdiff=100\nOSH Park 4L: 0.3 track 0.7 space (1.0 align)
+Text Notes 7650 1400 0    60   ~ 0
+tline, Zdiff=100 (Z0 = 67.1)\nOSH Park 4L: 0.1415 track 0.1584 space (0.299 align)
 Text Notes 12350 3250 0    60   ~ 0
 tline, Z0=50
 Text Notes 12300 1050 0    60   ~ 0
