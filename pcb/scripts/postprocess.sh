@@ -1,8 +1,22 @@
-#!/bin/bash
+#!/usr/bin/zsh
 
-bash scripts/rename_gerbers.sh
-bash scripts/gerb_render.sh
+PROJECT=ad9958-dev
 
-ps2pdf -sPAPERSIZE=legal renders/ad9958-dev.ps renders/ad9958-dev.pdf
-convert -alpha Off +antialias -density 40 renders/ad9958-dev.pdf renders/ad9958-dev_small.png
+setopt extended_glob
+
+./scripts/rename_gerbers.sh $PROJECT
+
+./scripts/gerb_render.sh $PROJECT
+
+pushd renders
+    for i in *.ps; do
+        ps2pdf -sPAPERSIZE=letter "$i" "${i%.ps}.pdf"
+    done
+
+    pdfunite $PROJECT.pdf *.pdf~$PROJECT.pdf~schematic.pdf(N) schematic.pdf
+
+    convert -alpha Off +antialias -density 40 $PROJECT.pdf schematic_small.png
+    rm *.pdf~schematic.pdf
+popd
+
 
